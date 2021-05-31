@@ -54,6 +54,10 @@ public:
 		while ( !isSorted() )
         	shuffle();
 	}
+	
+	~Individuo(){
+		delete[] arr;
+	}
 };
 
 
