@@ -2,14 +2,12 @@
 #ifndef _BOGOSORT_
 #define _BOGOSORT_
 
-#include <iostream>
-#include <stdlib.h>    
-#include <time.h> 
-
 class Individuo{
 	int *arr;
 	int n;
 public:
+
+    //Constructors
     Individuo();
 	Individuo(int n, int rango);
     ~Individuo();
@@ -25,8 +23,9 @@ public:
 	void bogosort_itera(int a);
 
 	void bogosort_perpetuo();
-	
-	
+
+    float fitness1();
+	float fitness2(int p, int q);
 };
 
 

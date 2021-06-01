@@ -2,7 +2,9 @@
 
 #include <iostream>
 #include <stdlib.h>    
-#include <time.h> 
+#include <time.h>
+
+#include "tools.h"
 
 Individuo::Individuo(){
 	int n = 0;
@@ -58,4 +60,22 @@ void Individuo::bogosort_perpetuo(){
 
 Individuo::~Individuo(){
 	delete[] arr;
+}
+
+float Individuo::fitness1(){
+	float fit = 0; 
+	for (int i = 0; i < n - 1; ++i)
+		if (arr[i] > arr[i + 1])
+			++fit;
+	return fit/(n) * 100.f;
+}
+
+float Individuo::fitness2(int p=0, int q=-1){
+	if(q == -1) q = n;
+	float fit = 0;
+	for (int i = p; i <= q; ++i)
+		for (int j = i + 1; j <=q; ++j)
+			if (arr[i] > arr[j])
+				++fit; // C(n, 2)
+	return 100 - (fit/optimized_choose_by_misael_svante_vilchez_molina(n,2) * 100.f);
 }

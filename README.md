@@ -2,7 +2,7 @@
 
 ### Team: Le Poché
 
-**Members:**
+### Members
 * ESPINOZA PEÑALOZA, Edgar Alfonso
 * MOSCOSO APAZA, Imanol Brayan
 * PERCA QUISPE, Joel Cristian
