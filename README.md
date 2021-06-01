@@ -12,6 +12,6 @@
 
 
 ## Description
-With this project we want to study and use genetic algotihms to improve Bogo Sort in orde to understand quantum computing
+With this project we want to study and use genetic algotihms to improve Bogo Sort in order to understand quantum computing
 ## Building and Executing
 
