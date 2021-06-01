@@ -1,6 +1,6 @@
 # Genetic algorithm and quantum computing: Bogo Sort case
 
-### Team: La Mota
+### Team: Le Poché
 
 **Members:**
 * ESPINOZA PEÑALOZA, Edgar Alfonso
