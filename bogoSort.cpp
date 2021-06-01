@@ -77,5 +77,5 @@ float Individuo::fitness2(int p=0, int q=-1){
 		for (int j = i + 1; j <=q; ++j)
 			if (arr[i] > arr[j])
 				++fit; // C(n, 2)
-	return 100 - (fit/optimized_choose_by_misael_svante_vilchez_molina(n,2) * 100.f);
+	return 100 - (fit/choose(n,2) * 100.f);
 }
