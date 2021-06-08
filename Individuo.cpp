@@ -1,4 +1,4 @@
-#include "bogoSort.h"
+#include "Individuo.h"
 
 #include <iostream>
 #include <stdlib.h>    
@@ -19,6 +19,15 @@ Individuo::Individuo(int n, int rango){
 		if (rand() % 2 + 1 == 2 )
 			arr[i] *= -1;
 
+	}
+}
+
+//constructor copia
+Individuo::Individuo(const Individuo& obj){
+	arr = new int [obj.n];
+	this->n = obj.n;
+	for(int i = 0 ; i < obj.n; i++){
+		arr[i] = obj.arr[i];
 	}
 }
 
@@ -78,4 +87,12 @@ float Individuo::fitness2(int p=0, int q=-1){
 			if (arr[i] > arr[j])
 				++fit; // C(n, 2)
 	return 100 - (fit/choose(n,2) * 100.f);
+}
+
+int& Individuo::operator [] (unsigned int i) {
+	return arr[i];
+}
+
+const int& Individuo::operator [] (unsigned int i) const {
+	return arr[i];
 }
