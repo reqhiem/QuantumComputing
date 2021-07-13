@@ -53,3 +53,4 @@ Individual::~Individual() {
 const float Individual::getLatestInterpretation() const {
 	return latest_interpretation;
 }
+
