@@ -35,7 +35,7 @@ public:
 	const Qubit& operator[] (size_t index) const;
 
 	bool operator < (const Individual& o) const;
-	bool operator > (const Individual& o) const;
+
 	Individual& operator = (const Individual& o);
 };
 

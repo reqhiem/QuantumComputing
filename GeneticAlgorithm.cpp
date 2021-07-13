@@ -79,7 +79,7 @@ void GeneticAlgorithm::run() {
 		for (int i = 0; i < population_size; ++i)
 			quantum_rotating_gate(population[i], best_individual); // Aplicando la compuerta de rotacion cuantica sobre cada individuo
 		evaluateIndividuals(); // Evaluando los nuevos valores y fitness de cada individuo
-		if (population[0] > best_individual) best_individual = population[0]; // Actualizando el mejor individuo
+		if (population[0].fitness > best_individual.fitness) best_individual = population[0]; // Actualizando el mejor individuo
 		std::cout << "Generacion " << i << ": x = " << best_individual.latest_interpretation << ", f(x) = " << best_individual.fitness << "\n";
 	}
 	std::cout << "ULTIMA GENERACION: x = " << best_individual.latest_interpretation << ", f(x) = " << best_individual.fitness << "\n";
