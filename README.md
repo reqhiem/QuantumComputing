@@ -14,7 +14,12 @@
 El presente proyecto es parte del curso de Análisis y Diseño de Algoritmos de la carrera Ciencia de la Computación. Consiste en desarrollar e implementar un Algoritmo Genético Cuántico para optimizar funciones, es decir, aproximar el máximo o mínimo de una función de variable real.
 
 ## Marco teórico
+
+Diagrama de  flujo de un Algoritmo Genético Cuántico
+
 ![AGC](https://static-01.hindawi.com/articles/mpe/volume-2013/730749/figures/730749.fig.001.jpg)
+
+Estrategia de la Compuerta de rotación Cuántica (ángulo de rotación)
 
 
 ## Compilación y ejecución
