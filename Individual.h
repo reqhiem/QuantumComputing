@@ -25,8 +25,10 @@ public:
 	//retornar el mejor resultado del individuo
 	const float getLatestInterpretation() const;
 	
+	
 	//declarar nuestra funcion fitness y lo evaluamos.
 	void evaluate_fitness(const float a, const float b);
+
 
 	//sobrecarga de operadores para facilitar el manejo del cromosoma y fitness
 	Qubit& operator [] (size_t index);
@@ -36,3 +38,5 @@ public:
 	bool operator > (const Individual& o) const;
 	Individual& operator = (const Individual& o);
 };
+
+
