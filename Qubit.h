@@ -4,12 +4,11 @@
 class GeneticAlgorithm;
 
 class Qubit {
-	friend class GeneticAlgorithm;
+	friend class GeneticAlgorithm; //La clase GeneticAlgorithm tendra acceso a los Qybits
 private:
     //Amplitudes
 	double alpha;
 	double beta;
-
 public:
 	Qubit();
 
