@@ -1,6 +1,6 @@
 #pragma once 
 
-#include "Qubit"
+#include "Qubit.h"
 
 class Individual {
 	friend class GeneticAlgorithm; //permitimos a la clase GeneticAlgorithm acceder al cromosoma y fitness
@@ -39,4 +39,4 @@ public:
 	Individual& operator = (const Individual& o);
 };
 
-
+#include "Individual.cpp"

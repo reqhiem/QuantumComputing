@@ -1,7 +1,6 @@
 #include "Individual.h"
 
 
-
 // Estandar para numeros flotantes: IEEE - 754 
 
 //Los Qubits de cada cromosoma son interpretados como numeros flotantes usando el estandar

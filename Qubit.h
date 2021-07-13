@@ -13,7 +13,7 @@ public:
 	Qubit();
 
 	bool check() const;
-	int measure() const;
+	int measure() const; //medir el qubit (colapsar)
 };
 
 #include "Qubit.cpp"
