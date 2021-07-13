@@ -1,7 +1,7 @@
-# Genetic algorithm and quantum computing
-### Team: Le Poché
+# QGA (Quantum Genetic Algorithm), Algotitmo Genético Cuántico para optimización de funciones
+### Grupo: Le Poché
 
-### Members
+### Integrantes
 * ESPINOZA PEÑALOZA, Edgar Alfonso
 * MOSCOSO APAZA, Imanol Brayan
 * PERCA QUISPE, Joel Cristian
@@ -10,7 +10,7 @@
 * VILCHEZ MOLINA, Misael Svante
 
 
-## Description
-With this project we want to study and use genetic algotihms to improve Bogo Sort in order to understand quantum computing
+## Descripción
+El presente proyecto es parte del curso de Análisis y Diseño de Algoritmos de la carrera Ciencia de la Computación.
 ## Building and Executing
 
