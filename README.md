@@ -1,5 +1,4 @@
-# Genetic algorithm and quantum computing: Bogo Sort case
-
+# Genetic algorithm and quantum computing
 ### Team: Le Poché
 
 ### Members
