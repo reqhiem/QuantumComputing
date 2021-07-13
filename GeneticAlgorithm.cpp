@@ -84,4 +84,3 @@ void GeneticAlgorithm::run() {
 	}
 	std::cout << "ULTIMA GENERACION: x = " << best_individual.latest_interpretation << ", f(x) = " << best_individual.fitness << "\n";
 }
-

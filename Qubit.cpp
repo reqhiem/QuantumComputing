@@ -16,4 +16,3 @@ int Qubit::measure() const {
 	double probability = (double)rand() / (double)RAND_MAX;
 	return (probability < beta * beta);
 }
-

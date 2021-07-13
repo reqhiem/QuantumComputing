@@ -1,4 +1,4 @@
-# QGA (Quantum Genetic Algorithm), Algotitmo Genético Cuántico para optimización de funciones
+# QGA (Quantum Genetic Algorithm), Algoritmo Genético Cuántico para optimización de funciones
 ### Grupo: Le Poché
 
 ### Integrantes
