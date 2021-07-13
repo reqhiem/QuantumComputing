@@ -54,3 +54,41 @@ const float Individual::getLatestInterpretation() const {
 	return latest_interpretation;
 }
 
+//funcion que como dice el nombre evalua el fitnes en cierto segmento de la funcion
+void Individual::evaluate_fitness(const float a, const float b) {
+	float x = latest_interpretation;
+	fitness = (x < a || x > b) ? (float)INT_MIN
+		: 3 * std::cos(4 * x) + 4 * std::sin(3 * x) + x; //funcion a optimizar
+	if (isinf(fitness)) fitness = (float)INT_MIN;
+}
+
+
+//sobrecargas para tratar al individuo como un array para facilitar uso
+Qubit& Individual::operator [] (size_t index) {
+	return chromosome[index];
+}
+
+const Qubit& Individual::operator [] (size_t index) const {
+	return chromosome[index];
+}
+
+//Un individuo es menor a otro si su fitnes es mayor
+bool Individual::operator < (const Individual& o) const {
+	return (fitness > o.fitness);
+}
+
+//Sobrecarga del operador de asignacion, necesario para evitar conflictos posteriores
+Individual& Individual::operator = (const Individual& o) {
+	if (this != &o) {
+		delete[] chromosome;
+
+		m = o.m;
+		fitness = o.fitness;
+		latest_interpretation = o.latest_interpretation;
+
+		chromosome = new Qubit[m];
+		for (int i = 0; i < m; ++i)
+			chromosome[i] = o.chromosome[i];
+	}
+	return *this;
+}
