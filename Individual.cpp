@@ -1,5 +1,5 @@
 #include "Individual.h"
-
+using namespace std;
 
 // Estandar para numeros flotantes: IEEE - 754 
 
