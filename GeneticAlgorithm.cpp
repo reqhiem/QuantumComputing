@@ -16,6 +16,7 @@ void GeneticAlgorithm::evaluateIndividuals() {
 	std::sort(population.begin(), population.end()); // Ordenando la poblacion del individuo mas apto al menos apto
 }
 
+
 // Calculando el angulo de rotacion
 float GeneticAlgorithm::calculate_rotation_angle(const Qubit x_i, const Qubit best_i, const bool x_best) {
 	int x = x_i.measure();
