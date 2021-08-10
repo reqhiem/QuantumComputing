@@ -31,6 +31,10 @@ Para su ejecución se requiere ejecutar el siguiente comando
 
 > `./main`
 
+## Resultados
+
+![EDP](docs/EDP.png)
+
 ## Referencias
 El presente trabajo está basado en el artículo:
 
