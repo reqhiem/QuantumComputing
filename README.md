@@ -33,7 +33,7 @@ Para su ejecución se requiere ejecutar el siguiente comando
 
 ## Resultados
 
-![EDP](docs/EDP.png)
+![EDP](docs/evolutionGraph.png)
 
 ## Referencias
 El presente trabajo está basado en el artículo:
